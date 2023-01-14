@@ -6,6 +6,8 @@ const gameData = [
 
 let editedPlayer = 0;
 let activePlayer = 0;
+let currentRound = 1;
+let gameIsOver = false
 
 const players = [
   { name: "", symbol: "X" },
@@ -46,3 +48,5 @@ for (let gameFieldElement of gameFieldElements) {
 }
 
 const activePlayerNameElement = document.getElementById("active-player-name");
+
+const gameOverElement = document.getElementById("game-over");
